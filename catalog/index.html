@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - EduLift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.svg" alt="EduLift" height="40">
+                <span class="brand-text">EduLift</span>
+            </a>
+            
+            <div class="search-container d-none d-md-block">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-nav-right">
+                <a href="#" class="cart-icon" data-bs-toggle="modal" data-bs-target="#addToCartModal">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../plans-pricing/index.html">Plans & Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../online-degree/index.html">Online Degrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about/index.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <h1 class="page-title mb-5">Course Catalog</h1>
+            
+            <!-- Filters -->
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>All Categories</option>
+                        <option>Data Science</option>
+                        <option>Programming</option>
+                        <option>Business</option>
+                        <option>Design</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>All Levels</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Sort by: Popularity</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Course Grid -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="course-card">
+                        <img src="https://pixabay.com/get/g2b52050b3b29ace7f96b6df156f7c90e6585d7a76cdf07643129b87d568f87e51946a23932328ac6108675c94a8f6503cb398745f56f24d03f27aaf7c29ab328_1280.jpg" alt="Data Analyst" class="course-image">
+                        <div class="course-content">
+                            <h5>Data Analyst</h5>
+                            <p>Kickstart your career in data with our intensive, job-ready program.</p>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="fw-bold">4.5</span>
+                                <span class="text-muted">(1,234)</span>
+                            </div>
+                            <div class="course-price mb-3">
+                                <span class="original-price">Rs.10,447</span>
+                                <span class="discounted-price">Rs.1,737</span>
+                                <span class="discount-badge">83% off</span>
+                            </div>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#addToCartModal">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="course-card">
+                        <img src="https://pixabay.com/get/g02c750fe8da71ccf81d7dfb9a5fbebfe90d392e275ae31b342277c35fe0e7280ebd6c83b4e1aa2ad3a425a96990a8d32d7b3c8469d8db50cf0b2f3a21d7b2d36_1280.jpg" alt="Web Development" class="course-image">
+                        <div class="course-content">
+                            <h5>Full Stack Web Development</h5>
+                            <p>Master modern web development with React, Node.js, and MongoDB.</p>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="fw-bold">4.7</span>
+                                <span class="text-muted">(986)</span>
+                            </div>
+                            <div class="course-price mb-3">
+                                <span class="original-price">Rs.15,000</span>
+                                <span class="discounted-price">Rs.2,500</span>
+                                <span class="discount-badge">83% off</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="course-card">
+                        <img src="https://pixabay.com/get/gdc4024dfe158a935816fe2b21b638456ae2610bec8c9fb1553f6e6f365f6a37cb264eeb3998fa56c066410a38838f7130a696a9127e8456360e2c93e26dc659d_1280.jpg" alt="Digital Marketing" class="course-image">
+                        <div class="course-content">
+                            <h5>Digital Marketing Specialist</h5>
+                            <p>Learn SEO, SEM, social media marketing, and content strategy.</p>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="fw-bold">4.3</span>
+                                <span class="text-muted">(756)</span>
+                            </div>
+                            <div class="course-price mb-3">
+                                <span class="original-price">Rs.12,000</span>
+                                <span class="discounted-price">Rs.2,000</span>
+                                <span class="discount-badge">83% off</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="course-card">
+                        <img src="https://pixabay.com/get/ge66d30d26f5d8738372803ccae43a16fc28d079b20fdeb9ffd863f5306ab51724da047161ed4e0481784c216161337a74dbe8c5b3e8921ffe52d68a019426845_1280.jpg" alt="Machine Learning" class="course-image">
+                        <div class="course-content">
+                            <h5>Machine Learning Engineer</h5>
+                            <p>Advanced ML algorithms, deep learning, and AI implementation.</p>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="fw-bold">4.8</span>
+                                <span class="text-muted">(1,456)</span>
+                            </div>
+                            <div class="course-price mb-3">
+                                <span class="original-price">Rs.18,000</span>
+                                <span class="discounted-price">Rs.3,000</span>
+                                <span class="discount-badge">83% off</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="course-card">
+                        <img src="https://pixabay.com/get/g6f0387702c2f855085e92d849fa178971de71a61625a10478ac3399bbc42ce6c4f93b25985e5b8a5937c807e83c114cf332f74ec1e8c9fce2f67228fbd14c243_1280.jpg" alt="Business Analytics" class="course-image">
+                        <div class="course-content">
+                            <h5>Business Analytics</h5>
+                            <p>Transform business data into actionable insights and strategies.</p>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="fw-bold">4.4</span>
+                                <span class="text-muted">(834)</span>
+                            </div>
+                            <div class="course-price mb-3">
+                                <span class="original-price">Rs.14,000</span>
+                                <span class="discounted-price">Rs.2,300</span>
+                                <span class="discount-badge">84% off</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="course-card">
+                        <img src="https://pixabay.com/get/g326149eae0d9650fdc567ba215ec07afa5b40fd3a6a8a34933af00fb022369fd1a8d1fea335ed314767c3124120393b8e6ed88109101088970b46fb11d78d3a5_1280.jpg" alt="Project Management" class="course-image">
+                        <div class="course-content">
+                            <h5>Project Management Professional</h5>
+                            <p>Master project management methodologies and leadership skills.</p>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="fw-bold">4.6</span>
+                                <span class="text-muted">(1,123)</span>
+                            </div>
+                            <div class="course-price mb-3">
+                                <span class="original-price">Rs.16,000</span>
+                                <span class="discounted-price">Rs.2,700</span>
+                                <span class="discount-badge">83% off</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Course pagination">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="../assets/images/logo.svg" alt="EduLift" height="40" class="mb-3">
+                        <span class="brand-text">EduLift</span>
+                    </div>
+                    <p>Transform your career with expert-led online learning. Join millions of learners worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">All Courses</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Connect</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 EduLift. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Made with ❤️ for learners worldwide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add to Cart Modal -->
+    <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content cart-modal">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="course-image-wrapper">
+                                <img src="https://pixabay.com/get/g2b52050b3b29ace7f96b6df156f7c90e6585d7a76cdf07643129b87d568f87e51946a23932328ac6108675c94a8f6503cb398745f56f24d03f27aaf7c29ab328_1280.jpg" alt="Data Analyst Course" class="img-fluid course-modal-image">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="course-title">Data Analyst</h4>
+                            <p class="course-description">Kickstart your career in data with our intensive, job-ready program. Learn data analysis, visualization, SQL, Python, and real-world business insights.</p>
+                            <div class="rating-section mb-3">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="fw-bold">4.5</span>
+                                </div>
+                                <p class="text-muted small mb-0">Average Course Rating</p>
+                            </div>
+                            
+                            <div class="pricing-info">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Original Price:</span>
+                                    <span>Rs.10,447</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Discount (83% off):</span>
+                                    <span class="text-success">-Rs.8,710</span>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between fw-bold mb-4">
+                                    <span>Total:</span>
+                                    <span>Rs.1,737</span>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-primary w-100" onclick="proceedToCheckout()">Proceed Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

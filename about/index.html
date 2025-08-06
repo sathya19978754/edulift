@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EduLift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.svg" alt="EduLift" height="40">
+                <span class="brand-text">EduLift</span>
+            </a>
+            
+            <div class="search-container d-none d-md-block">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-nav-right">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../catalog/index.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../plans-pricing/index.html">Plans & Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../online-degree/index.html">Online Degrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="about-hero text-center mb-5">
+                <h1 class="page-title">About EduLift</h1>
+                <p class="lead">Transforming lives through education and empowering careers worldwide</p>
+            </div>
+
+            <!-- Mission Section -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2>Our Mission</h2>
+                    <p class="lead">To democratize quality education and make world-class learning accessible to everyone, everywhere.</p>
+                    <p>At EduLift, we believe that education is the great equalizer. Our platform connects learners with industry experts and top universities to provide personalized, practical, and career-focused education that transforms lives.</p>
+                    <ul class="mission-points">
+                        <li><i class="fas fa-check text-primary"></i> Accessible quality education for all</li>
+                        <li><i class="fas fa-check text-primary"></i> Industry-relevant curriculum</li>
+                        <li><i class="fas fa-check text-primary"></i> Personalized learning experience</li>
+                        <li><i class="fas fa-check text-primary"></i> Career advancement focus</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://pixabay.com/get/gbe678536666bf69436377d1f48ac1399f884afa22cd157f8bc69becf675fad8d718f12cf22b8d860325a0ffe5137fb96a1dd8ccbc7e62311e64e8bb5c6edd9df_1280.jpg" alt="Our Mission" class="img-fluid rounded">
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-section py-5 mb-5">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-item">
+                            <h3 class="stat-number">10M+</h3>
+                            <p class="stat-label">Active Learners</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-item">
+                            <h3 class="stat-number">500+</h3>
+                            <p class="stat-label">Expert Instructors</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-item">
+                            <h3 class="stat-number">1000+</h3>
+                            <p class="stat-label">Courses Available</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-item">
+                            <h3 class="stat-number">95%</h3>
+                            <p class="stat-label">Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section mb-5">
+                <h2 class="text-center mb-4">Meet Our Team</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-member">
+                            <img src="https://pixabay.com/get/g6f0387702c2f855085e92d849fa178971de71a61625a10478ac3399bbc42ce6c4f93b25985e5b8a5937c807e83c114cf332f74ec1e8c9fce2f67228fbd14c243_1280.jpg" alt="John Smith" class="team-image">
+                            <div class="team-info">
+                                <h5>John Smith</h5>
+                                <p class="team-role">CEO & Founder</p>
+                                <p class="team-bio">Former VP of Education at Google, passionate about democratizing education through technology.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-member">
+                            <img src="https://pixabay.com/get/gd9a4c71de4789b67c36de5a2f39d96c7359d95ed5f95b81a0add49eda9b8eed694055ae509de4ee1c7f39317c9aa27677ee74c763c7217e8795a63f09c92dd3f_1280.jpg" alt="Sarah Johnson" class="team-image">
+                            <div class="team-info">
+                                <h5>Sarah Johnson</h5>
+                                <p class="team-role">Chief Technology Officer</p>
+                                <p class="team-bio">Former lead engineer at Microsoft, building scalable learning platforms for millions of users.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-member">
+                            <img src="https://pixabay.com/get/g90027314dc559e50e9acfbffee42cf6076633ac3ae3b604afe0711b0a244035e80c5ceff4ab7c2bf700ec9baa40e7d29ec90589876fa02925aa504def0a4a0b1_1280.jpg" alt="Dr. Michael Chen" class="team-image">
+                            <div class="team-info">
+                                <h5>Dr. Michael Chen</h5>
+                                <p class="team-role">Head of Content</p>
+                                <p class="team-bio">Former Stanford professor with 15 years of experience in curriculum development and educational research.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="values-section mb-5">
+                <h2 class="text-center mb-4">Our Core Values</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Community First</h4>
+                            <p>We build strong learning communities where students support each other's growth and success.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovation</h4>
+                            <p>We continuously innovate our teaching methods and technology to provide the best learning experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Passion for Learning</h4>
+                            <p>We are passionate about lifelong learning and helping others discover their potential.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2>Get in Touch</h2>
+                        <p class="lead">Have questions or want to learn more about EduLift? We'd love to hear from you.</p>
+                        <div class="contact-info">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <i class="fas fa-envelope text-primary mb-2"></i>
+                                    <p>hello@edulift.com</p>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <i class="fas fa-phone text-primary mb-2"></i>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                                    <p>San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="../assets/images/logo.svg" alt="EduLift" height="40" class="mb-3">
+                        <span class="brand-text">EduLift</span>
+                    </div>
+                    <p>Transform your career with expert-led online learning. Join millions of learners worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="../catalog/index.html">All Courses</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Connect</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 EduLift. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Made with ❤️ for learners worldwide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

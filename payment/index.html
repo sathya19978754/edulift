@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - EduLift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.svg" alt="EduLift" height="40">
+                <span class="brand-text">EduLift</span>
+            </a>
+            
+            <div class="search-container d-none d-md-block">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-nav-right">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../catalog/index.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../plans-pricing/index.html">Plans & Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../online-degree/index.html">Online Degrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about/index.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Payment Content -->
+    <div class="page-content">
+        <div class="container">
+            <h2 class="text-center mb-5">Billing Address & Payment Method</h2>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Billing Address -->
+                    <div class="payment-section mb-4">
+                        <h5 class="section-title">Billing Address</h5>
+                        <div class="payment-card">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="mobile" class="form-label">Mobile Number</label>
+                                    <input type="tel" class="form-control" id="mobile" placeholder="Enter mobile number">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Address -->
+                    <div class="payment-section mb-4">
+                        <h5 class="section-title">Shipping Address</h5>
+                        <div class="payment-card">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Enter your email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Methods -->
+                    <div class="payment-section">
+                        <div class="payment-card">
+                            <!-- Cards Payment -->
+                            <div class="payment-method-item active" data-method="card">
+                                <div class="payment-method-header">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="cardPayment" name="paymentMethod" value="card" checked>
+                                        <label for="cardPayment" class="ms-3 fw-bold">
+                                            <i class="fas fa-credit-card me-2"></i>Cards
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="payment-method-details">
+                                    <div class="mb-3">
+                                        <label for="cardNumber" class="form-label">Card Number</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 1234 5678">
+                                            <span class="input-group-text"><i class="fas fa-credit-card"></i></span>
+                                        </div>
+                                        <div class="payment-icons mt-2">
+                                            <span class="payment-icon">💳</span>
+                                            <span class="payment-icon">💳</span>
+                                            <span class="payment-text">RuPay</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="expiryDate" class="form-label">Expiry Date</label>
+                                            <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cvv" class="form-label">CVC/CVV</label>
+                                            <input type="text" class="form-control" id="cvv" placeholder="CVC">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="cardName" class="form-label">Name on Card</label>
+                                        <input type="text" class="form-control" id="cardName" placeholder="Name">
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="saveCard">
+                                        <label class="form-check-label" for="saveCard">
+                                            Save my Details for next use
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- UPI Payment -->
+                            <div class="payment-method-item" data-method="upi">
+                                <div class="payment-method-header">
+                                    <div class="d-flex align-items-center justify-content-between w-100">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" id="upiPayment" name="paymentMethod" value="upi">
+                                            <label for="upiPayment" class="ms-3 fw-bold">UPI Payments</label>
+                                        </div>
+                                        <span class="payment-logo">UPI</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Net Banking -->
+                            <div class="payment-method-item" data-method="netbanking">
+                                <div class="payment-method-header">
+                                    <div class="d-flex align-items-center justify-content-between w-100">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" id="netBanking" name="paymentMethod" value="netbanking">
+                                            <label for="netBanking" class="ms-3 fw-bold">Net Banking</label>
+                                        </div>
+                                        <i class="fas fa-university payment-icon-large"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-4">
+                    <div class="order-summary">
+                        <h5 class="section-title">Order Summary</h5>
+                        <div class="summary-card">
+                            <div class="summary-item">
+                                <span>Original Price:</span>
+                                <span>Rs.10,447</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Discount (83% off):</span>
+                                <span class="text-success">-Rs.8,710</span>
+                            </div>
+                            <hr>
+                            <div class="summary-item total">
+                                <span class="fw-bold">Total:</span>
+                                <span class="fw-bold">Rs.1,737</span>
+                            </div>
+                            
+                            <p class="terms-text">By Completing your purchase, you agree to these <a href="#" class="text-decoration-none">Terms of Use</a></p>
+                            
+                            <button class="btn btn-primary w-100 pay-btn" onclick="processPayment()">Pay Rs. 1,737</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="../assets/images/logo.svg" alt="EduLift" height="40" class="mb-3">
+                        <span class="brand-text">EduLift</span>
+                    </div>
+                    <p>Transform your career with expert-led online learning. Join millions of learners worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="../catalog/index.html">All Courses</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Connect</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 EduLift. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Made with ❤️ for learners worldwide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success - EduLift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.svg" alt="EduLift" height="40">
+            </a>
+            
+            <div class="search-container d-none d-md-block">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-nav-right">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../catalog/index.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../plans-pricing/index.html">Plans & Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../online-degree/index.html">Online Degrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about/index.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Success Content -->
+    <div class="page-content">
+        <div class="container">
+            <div class="text-center">
+                <!-- Success Icon -->
+                <div class="success-icon mb-4">
+                    <div class="success-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <h2 class="mb-3">Your Payment Successfully Processed</h2>
+                <p class="text-muted mb-5">You Will Receive Confirmation Email Shortly</p>
+
+                <!-- Course Summary Card -->
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card course-summary-card">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img src="https://pixabay.com/get/g2b52050b3b29ace7f96b6df156f7c90e6585d7a76cdf07643129b87d568f87e51946a23932328ac6108675c94a8f6503cb398745f56f24d03f27aaf7c29ab328_1280.jpg" alt="Data Analyst Course" class="img-fluid course-image">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="mb-3">Data Analyst</h5>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <small class="text-muted">Original Price:</small>
+                                                <div>Rs.10,447</div>
+                                            </div>
+                                            <div class="col-6">
+                                                <small class="text-muted">Discount (83% off):</small>
+                                                <div class="text-success">-Rs.8,710</div>
+                                            </div>
+                                        </div>
+                                        <hr class="my-2">
+                                        <div class="fw-bold">
+                                            <small class="text-muted">Total:</small>
+                                            <div>Rs.1,737</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <button class="btn btn-primary me-3" onclick="window.location.href='../index.html'">Go to Dashboard</button>
+                    <button class="btn btn-outline-primary" onclick="window.location.href='../catalog/index.html'">Continue Learning</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="../assets/images/logo.svg" alt="EduLift" height="40" class="mb-3">
+                    <p>Transform your career with expert-led online learning. Join millions of learners worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="../catalog/index.html">All Courses</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Connect</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 EduLift. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Made with ❤️ for learners worldwide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

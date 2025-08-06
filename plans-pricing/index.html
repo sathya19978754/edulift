@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans & Pricing - EduLift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.svg" alt="EduLift" height="40">
+                <span class="brand-text">EduLift</span>
+            </a>
+            
+            <div class="search-container d-none d-md-block">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-nav-right">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../catalog/index.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Plans & Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../online-degree/index.html">Online Degrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about/index.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="page-title">Plans & Pricing</h1>
+                <p class="lead">Choose the perfect plan for your learning journey</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>Basic</h4>
+                            <div class="price">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">999</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Access to 50+ courses</li>
+                                <li><i class="fas fa-check"></i> Certificate of completion</li>
+                                <li><i class="fas fa-check"></i> Community forum access</li>
+                                <li><i class="fas fa-check"></i> Mobile app access</li>
+                                <li><i class="fas fa-times text-muted"></i> 1-on-1 mentorship</li>
+                                <li><i class="fas fa-times text-muted"></i> Career guidance</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h4>Premium</h4>
+                            <div class="price">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">1,999</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Access to 200+ courses</li>
+                                <li><i class="fas fa-check"></i> Certificate of completion</li>
+                                <li><i class="fas fa-check"></i> Community forum access</li>
+                                <li><i class="fas fa-check"></i> Mobile app access</li>
+                                <li><i class="fas fa-check"></i> 2 hours monthly mentorship</li>
+                                <li><i class="fas fa-check"></i> Career guidance</li>
+                                <li><i class="fas fa-check"></i> Project reviews</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>Professional</h4>
+                            <div class="price">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">3,999</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Access to all courses</li>
+                                <li><i class="fas fa-check"></i> Certificate of completion</li>
+                                <li><i class="fas fa-check"></i> Community forum access</li>
+                                <li><i class="fas fa-check"></i> Mobile app access</li>
+                                <li><i class="fas fa-check"></i> Unlimited mentorship</li>
+                                <li><i class="fas fa-check"></i> Career guidance</li>
+                                <li><i class="fas fa-check"></i> Project reviews</li>
+                                <li><i class="fas fa-check"></i> Job placement assistance</li>
+                                <li><i class="fas fa-check"></i> 1-on-1 career coaching</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    Can I switch plans anytime?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    Is there a free trial available?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer a 7-day free trial for all our plans. No credit card required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept all major credit cards, debit cards, UPI payments, and net banking.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="../assets/images/logo.svg" alt="EduLift" height="40" class="mb-3">
+                        <span class="brand-text">EduLift</span>
+                    </div>
+                    <p>Transform your career with expert-led online learning. Join millions of learners worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="../catalog/index.html">All Courses</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Connect</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 EduLift. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Made with ❤️ for learners worldwide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLift - Transform Your Career with Online Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="EduLift" height="40">
+                <span class="brand-text">EduLift</span>
+            </a>
+            
+            <div class="search-container d-none d-md-block">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-nav-right">
+                <a href="#" class="cart-icon" data-bs-toggle="modal" data-bs-target="#addToCartModal">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog/index.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plans-pricing/index.html">Plans & Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="online-degree/index.html">Online Degrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about/index.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Transform Your Career with <span class="highlight">Expert-Led</span> Online Learning</h1>
+                    <p class="hero-description">Join over 10+ million learners worldwide and master in-demand skills with personalized mentorship and industry-recognized certifications.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary me-3">Start Learning Today</button>
+                        <button class="btn btn-outline-light">Browse Courses</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://pixabay.com/get/gbe678536666bf69436377d1f48ac1399f884afa22cd157f8bc69becf675fad8d718f12cf22b8d860325a0ffe5137fb96a1dd8ccbc7e62311e64e8bb5c6edd9df_1280.jpg" alt="Students Learning" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>From The <span class="highlight">EDULIFT</span> Community</h2>
+                <p class="lead">10+ million people have already joined EDULIFT</p>
+            </div>
+
+            <div class="testimonials-header mb-4">
+                <h6 class="text-start">Hear What Our Learners Are Saying</h6>
+                <p class="text-muted">Our students' success stories speak for themselves.<br>
+                See how personalized learning and expert mentorship have transformed their careers and lives.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar-wrapper">
+                            <img src="https://pixabay.com/get/g702900c36774de9611d77f1fec5d86f5e700ef5cb99dd1a820fe7b86bf86803b4607a96b25474d4cb2bd6639ae1ea2221e5c14789d96a0a6808a2a4cf97deed0_1280.jpg" alt="Rohit S." class="testimonial-avatar">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">The one-on-one mentorship sessions were a game-changer. I got clear guidance, project reviews, and career advice directly from an expert who genuinely cared about my success.</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author">
+                                <h6 class="mb-0">Rohit S.</h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">Data Analyst</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar-wrapper">
+                            <img src="https://pixabay.com/get/g1a31459fff7c3f3238054780e96717cfb5c0e5a42647faba7e69b756f2490c206ae414a00c9f60702be4cc7f2414970b625b2e2f72dd1ad9621bb8b4cffc7621_1280.jpg" alt="Nehan P." class="testimonial-avatar">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">The personalized feedback from my mentor completely changed my learning journey. Instead of just theory, I got real-world insights that helped me land my dream job in tech</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author">
+                                <h6 class="mb-0">Nehan P.</h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">Software Developer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar-wrapper">
+                            <img src="https://pixabay.com/get/g7630c7848f32b7e64fa8b4bdcf048385d6ba36449822ecd4632c6072f9a19e678e227a31cf6a83379f151661d9120dfa6de85869e6bfa7f55944204682907e1f_1280.jpg" alt="Aaradhya V." class="testimonial-avatar">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">Learning from someone who's actually worked in the industry made all the difference. My instructor didn't just teach — they coached me, challenged me, and helped me grow faster than I ever expected.</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author">
+                                <h6 class="mb-0">Aaradhya V.</h6>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">Digital Marketing Specialist</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo.svg" alt="EduLift" height="40" class="mb-3">
+                        <span class="brand-text">EduLift</span>
+                    </div>
+                    <p>Transform your career with expert-led online learning. Join millions of learners worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about/index.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="catalog/index.html">All Courses</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Connect</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 EduLift. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Made with ❤️ for learners worldwide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content login-modal">
+                <div class="modal-header">
+                    <ul class="nav nav-tabs modal-tabs w-100" role="tablist">
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link active text-center" id="login-tab" data-bs-toggle="tab" href="#login" role="tab">Login</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-center" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab">Signup</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel">
+                            <h5 class="text-center mb-4">Welcome Back! Please login to your account</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="loginUsername" class="form-label">Username</label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="loginUsername" placeholder="abcd@gmail.com">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="***********">
+                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <a href="#" class="text-decoration-none">Forgot Password?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
+                                <p class="text-center">New user? <a href="#" id="switchToSignup" class="text-decoration-none">Sign up</a></p>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel">
+                            <h5 class="text-center mb-4">Welcome Back! Please login to your account</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="signupFirstName" class="form-label">First Name</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="signupFirstName" placeholder="***********">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupLastName" class="form-label">Last Name</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="signupLastName" placeholder="***********">
+                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label">Email</label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="signupEmail" placeholder="***********">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupPassword" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="signupPassword" placeholder="***********">
+                                        <span class="input-group-text"><i class="fas fa-eye"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="confirmPassword" placeholder="***********">
+                                        <span class="input-group-text"><i class="fas fa-eye"></i></span>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 mb-3">Signup</button>
+                                <p class="text-center">Already have an account? <a href="#" id="switchToLogin" class="text-decoration-none">Login</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add to Cart Modal -->
+    <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content cart-modal">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="course-image-wrapper">
+                                <img src="https://pixabay.com/get/g2b52050b3b29ace7f96b6df156f7c90e6585d7a76cdf07643129b87d568f87e51946a23932328ac6108675c94a8f6503cb398745f56f24d03f27aaf7c29ab328_1280.jpg" alt="Data Analyst Course" class="img-fluid course-modal-image">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="course-title">Data Analyst</h4>
+                            <p class="course-description">Kickstart your career in data with our intensive, job-ready program. Learn data analysis, visualization, SQL, Python, and real-world business insights.</p>
+                            <div class="rating-section mb-3">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="fw-bold">4.5</span>
+                                </div>
+                                <p class="text-muted small mb-0">Average Course Rating</p>
+                            </div>
+                            
+                            <div class="pricing-info">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Original Price:</span>
+                                    <span>Rs.10,447</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Discount (83% off):</span>
+                                    <span class="text-success">-Rs.8,710</span>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between fw-bold mb-4">
+                                    <span>Total:</span>
+                                    <span>Rs.1,737</span>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-primary w-100" onclick="proceedToCheckout()">Proceed Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

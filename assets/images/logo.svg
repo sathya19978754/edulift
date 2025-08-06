@@ -1,0 +1,25 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <rect x="2" y="2" width="36" height="36" rx="8" fill="#9747FF"/>
+  
+  <!-- Letter E -->
+  <rect x="8" y="8" width="2" height="24" fill="white"/>
+  <rect x="8" y="8" width="12" height="2" fill="white"/>
+  <rect x="8" y="18" width="10" height="2" fill="white"/>
+  <rect x="8" y="30" width="12" height="2" fill="white"/>
+  
+  <!-- Letter D -->
+  <rect x="22" y="8" width="2" height="24" fill="white"/>
+  <path d="M24 8 L30 8 Q34 8 34 14 L34 26 Q34 32 30 32 L24 32 Z" fill="white"/>
+  <rect x="24" y="10" width="6" height="2" fill="#9747FF"/>
+  <rect x="24" y="30" width="6" height="2" fill="#9747FF"/>
+  <rect x="32" y="12" width="2" height="16" fill="#9747FF"/>
+  
+  <!-- Company Name -->
+  <text x="45" y="16" font-family="Open Sans, sans-serif" font-size="14" font-weight="700" fill="#2c3e50">Edu</text>
+  <text x="45" y="30" font-family="Open Sans, sans-serif" font-size="14" font-weight="700" fill="#9747FF">Lift</text>
+  
+  <!-- Tagline -->
+  <text x="80" y="20" font-family="Open Sans, sans-serif" font-size="8" fill="#6c757d">Transform</text>
+  <text x="80" y="28" font-family="Open Sans, sans-serif" font-size="8" fill="#6c757d">Your Career</text>
+</svg>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Degrees - EduLift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.svg" alt="EduLift" height="40">
+                <span class="brand-text">EduLift</span>
+            </a>
+            
+            <div class="search-container d-none d-md-block">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="navbar-nav-right">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../catalog/index.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../plans-pricing/index.html">Plans & Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Online Degrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about/index.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="page-title">Online Degrees</h1>
+                <p class="lead">Earn accredited degrees from top universities online</p>
+            </div>
+
+            <!-- Degree Programs -->
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="degree-card">
+                        <div class="degree-header">
+                            <img src="https://pixabay.com/get/g2b52050b3b29ace7f96b6df156f7c90e6585d7a76cdf07643129b87d568f87e51946a23932328ac6108675c94a8f6503cb398745f56f24d03f27aaf7c29ab328_1280.jpg" alt="Computer Science" class="degree-image">
+                            <div class="degree-info">
+                                <h4>Master of Computer Science</h4>
+                                <p class="university">Stanford University Online</p>
+                                <div class="degree-meta">
+                                    <span class="duration"><i class="fas fa-clock"></i> 2 Years</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="degree-body">
+                            <p>Advanced computer science curriculum covering AI, machine learning, and software engineering.</p>
+                            <div class="degree-features">
+                                <span class="feature-tag">Accredited</span>
+                                <span class="feature-tag">Flexible Schedule</span>
+                                <span class="feature-tag">Industry Projects</span>
+                            </div>
+                            <div class="degree-price">
+                                <span class="price">$45,000</span>
+                                <span class="installment">or Rs.15,000/month</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="degree-card">
+                        <div class="degree-header">
+                            <img src="https://pixabay.com/get/gdc4024dfe158a935816fe2b21b638456ae2610bec8c9fb1553f6e6f365f6a37cb264eeb3998fa56c066410a38838f7130a696a9127e8456360e2c93e26dc659d_1280.jpg" alt="Business Administration" class="degree-image">
+                            <div class="degree-info">
+                                <h4>MBA in Business Administration</h4>
+                                <p class="university">Harvard Business School Online</p>
+                                <div class="degree-meta">
+                                    <span class="duration"><i class="fas fa-clock"></i> 18 Months</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="degree-body">
+                            <p>Comprehensive MBA program focusing on leadership, strategy, and global business management.</p>
+                            <div class="degree-features">
+                                <span class="feature-tag">AACSB Accredited</span>
+                                <span class="feature-tag">Global Network</span>
+                                <span class="feature-tag">Case Studies</span>
+                            </div>
+                            <div class="degree-price">
+                                <span class="price">$65,000</span>
+                                <span class="installment">or Rs.22,000/month</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="degree-card">
+                        <div class="degree-header">
+                            <img src="https://pixabay.com/get/g326149eae0d9650fdc567ba215ec07afa5b40fd3a6a8a34933af00fb022369fd1a8d1fea335ed314767c3124120393b8e6ed88109101088970b46fb11d78d3a5_1280.jpg" alt="Data Science" class="degree-image">
+                            <div class="degree-info">
+                                <h4>Master of Data Science</h4>
+                                <p class="university">MIT Online</p>
+                                <div class="degree-meta">
+                                    <span class="duration"><i class="fas fa-clock"></i> 20 Months</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="degree-body">
+                            <p>Cutting-edge data science program with focus on analytics, visualization, and machine learning.</p>
+                            <div class="degree-features">
+                                <span class="feature-tag">STEM Designated</span>
+                                <span class="feature-tag">Industry Partners</span>
+                                <span class="feature-tag">Capstone Project</span>
+                            </div>
+                            <div class="degree-price">
+                                <span class="price">$55,000</span>
+                                <span class="installment">or Rs.18,500/month</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="degree-card">
+                        <div class="degree-header">
+                            <img src="https://pixabay.com/get/g6f0387702c2f855085e92d849fa178971de71a61625a10478ac3399bbc42ce6c4f93b25985e5b8a5937c807e83c114cf332f74ec1e8c9fce2f67228fbd14c243_1280.jpg" alt="Digital Marketing" class="degree-image">
+                            <div class="degree-info">
+                                <h4>Master of Digital Marketing</h4>
+                                <p class="university">Northwestern University Online</p>
+                                <div class="degree-meta">
+                                    <span class="duration"><i class="fas fa-clock"></i> 15 Months</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="degree-body">
+                            <p>Modern digital marketing degree covering social media, analytics, and brand management.</p>
+                            <div class="degree-features">
+                                <span class="feature-tag">Industry Certified</span>
+                                <span class="feature-tag">Real Campaigns</span>
+                                <span class="feature-tag">Mentorship</span>
+                            </div>
+                            <div class="degree-price">
+                                <span class="price">$35,000</span>
+                                <span class="installment">or Rs.12,000/month</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="benefits-section mt-5">
+                <h3 class="text-center mb-4">Why Choose Online Degrees?</h3>
+                <div class="row">
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5>Flexible Schedule</h5>
+                        <p>Study at your own pace with flexible class timings</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h5>Accredited Programs</h5>
+                        <p>Degrees from top universities with full accreditation</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5>Expert Faculty</h5>
+                        <p>Learn from industry experts and renowned professors</p>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <div class="benefit-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h5>Career Support</h5>
+                        <p>Job placement assistance and career counseling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="../assets/images/logo.svg" alt="EduLift" height="40" class="mb-3">
+                        <span class="brand-text">EduLift</span>
+                    </div>
+                    <p>Transform your career with expert-led online learning. Join millions of learners worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Courses</h6>
+                    <ul class="footer-links">
+                        <li><a href="../catalog/index.html">All Courses</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Connect</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 EduLift. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Made with ❤️ for learners worldwide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
